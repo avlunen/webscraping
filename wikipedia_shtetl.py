@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        wikipedia_shetl.py
+# Name:        wikipedia_shtetl.py
 # Purpose:
 #
 # Author:      Alexander von Lünen
@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import urllib2
 import codecs
 
-# extract coordinates from Wikipedia geo page
+# extract coordinates from Wikipedia page
 def get_coords(link):
    gheader = {'User-Agent': 'Mozilla/5.0'} # Needed to prevent 403 error on Wikipedia
    greq = urllib2.Request(link,headers=gheader)
@@ -26,7 +26,7 @@ def get_coords(link):
 
    return g
 
-# extract Shtelekh from Wikipedia page; these are present as bullet point list on the page
+# extract Shtelekh from Wikipedia page; these are present as a bullet point list on the page
 def shtetl():
    wiki = "https://en.wikipedia.org/wiki/List_of_shtetls"
    header = {'User-Agent': 'Mozilla/5.0'} # Needed to prevent 403 error on Wikipedia

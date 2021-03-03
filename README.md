@@ -4,7 +4,11 @@ Various Python scripts to scrape data from web pages, such as Wikipedia (yes, I 
 Most of these scripts I hacked together quickly to get some data for a history of the Holocaust module I teach at university, so that students have something to map.
 
 wikipedia_camps.py: Extracting the data for Nazi concentration camps.
+
 wikipedia_camps.csv: Data file resulting from a test run of the above.
+
 wikipedia_shtetl.py: Extracting the data for Jewish towns (shtetl) and cities (shtot) in East Central Europe.
+
 wikipedia_shtetl.csv: Data file resulting from a test run of the above.
+
 wikipedia_shtot.csv: Data file resulting from a test run of the above.
